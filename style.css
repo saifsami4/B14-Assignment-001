@@ -87,6 +87,7 @@
 .hero-btn:hover {
   background: #010f55;
 }
+
 .speakers{
     width: 90%;
     margin: 80px auto;
@@ -99,62 +100,161 @@
 }
 
 .speaker-container{
-
     display: grid;
-
     grid-template-columns: repeat(2,1fr);
-
     gap:30px;
 }
 
 .card{
-
     border:1px solid #ddd;
-
     border-radius:10px;
-
     overflow:hidden;
-
     background:white;
 }
 
 .card img{
-
-    width:100%;
-
-    height:300px;
-
+    width:90%;
+    height:350px;
     object-fit:cover;
-
     display:block;
 }
 
 .card-content{
-
     padding:20px;
 }
 
 .category{
-
     color:#2563eb;
-
     font-size:12px;
-
     font-weight:bold;
-
     text-transform:uppercase;
 }
 
 .card h3{
-
     margin:10px 0;
-
     font-size:20px;
 }
 
 .designation{
-
     color:gray;
-
     font-size:15px;
+}
+
+
+.pricing-section {
+  padding: 96px 24px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid #545d6e;
+}
+
+.pricing-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.pricing-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 48px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+  width: 280px;
+  text-align: left;
+}
+
+.price-card-featured {
+  background: #0f172a;
+  border: none;
+  color: #ffffff;
+}
+
+.plan-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.plan-price {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.plan-period {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.price-card-featured .divider {
+  border-top: 1px solid #334155;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.feature-list li {
+  font-size: 14px;
+  color: #475569;
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.price-card-featured .feature-list li {
+  color: #cbd5e1;
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.btn-solid {
+  background: #2563eb;
+  border: none;
+  color: #ffffff;
 }
