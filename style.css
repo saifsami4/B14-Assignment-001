@@ -366,7 +366,6 @@
   .sponsor-name {
     font-size: 20px;
     font-weight: 800;
-    letter-spacing: -0.01em;
   }
 
   .sponsor-tier {
@@ -430,4 +429,68 @@
   @media (max-width: 800px) {
     .details-grid { grid-template-columns: repeat(2, 1fr); }
     .sponsor-grid { grid-template-columns: 1fr; }
+  }
+  
+  .site-footer {
+    background: #040333;
+    padding: 48px 24px 32px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  .footer-top {
+    max-width: 1040px;
+    margin: 0 auto 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+
+  .footer-social {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer-social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+  }
+
+  .footer-social a:hover {
+    background: #2563eb;
+  }
+
+  .footer-social img {
+    width: 16px;
+    height: 16px;
+    /* keeps icons dark gray by default */
+    filter: invert(29%) sepia(9%) saturate(1000%) hue-rotate(176deg);
+  }
+
+  .footer-social a:hover img {
+    /* turns icon white on hover, to sit on the blue circle */
+    filter: invert(100%);
+  }
+
+  .footer-divider {
+    max-width: 1040px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .footer-copyright {
+    max-width: 1040px;
+    margin: 24px auto 0;
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
   }
