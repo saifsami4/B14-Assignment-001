@@ -471,12 +471,12 @@
   .footer-social img {
     width: 16px;
     height: 16px;
-    /* keeps icons dark gray by default */
+   
     filter: invert(29%) sepia(9%) saturate(1000%) hue-rotate(176deg);
   }
 
   .footer-social a:hover img {
-    /* turns icon white on hover, to sit on the blue circle */
+    
     filter: invert(100%);
   }
 
